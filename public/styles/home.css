@@ -1,0 +1,36 @@
+main {
+  min-height: calc(100vh - 120px);
+  background-image: url(../images/home/reception.jpg.png);
+  background-size: cover;
+}
+
+main .wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main .wrapper .item {
+  border: 1px solid #efefef;
+  min-height: calc(calc(100vh - 120px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px; /* 133.333% */
+}
+
+@media (max-width: 900px) {
+  main .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  main .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
